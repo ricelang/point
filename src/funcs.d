@@ -15,7 +15,7 @@ void _add() {
 // -
 void _sub() {
   if (stack.size > 1) {
-    double temp = stack.pop();
+    real temp = stack.pop();
     stack.push(stack.pop() - temp);
   }
 }
@@ -30,7 +30,7 @@ void _mul() {
 // /
 void _div() {
   if (stack.size > 1) {
-    double temp = stack.pop();
+    real temp = stack.pop();
     stack.push(stack.pop() / temp);
   }
 }
@@ -38,7 +38,7 @@ void _div() {
 // %
 void _mod() {
   if (stack.size > 1) {
-    double temp = stack.pop();
+    real temp = stack.pop();
     stack.push(stack.pop() % temp);
   }
 }
@@ -72,10 +72,9 @@ void _in_char() {
 // ;
 void _in_num() {
   string input = readln();
+  input = input[0..input.length-1];
   if (isNumeric(input))
     try
-      stack.push(parse!double(input));
+      stack.push(parse!real(input));
     catch (Exception e) {}
-  else
-    stack.push(0);
 }

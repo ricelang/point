@@ -1,3 +1,7 @@
+0.0.2
+  + fixed number input
+  + changed number byte size to maximum floating-point size implemented in machine
+
 0.0.1 (initial version)
   + added instructions '0'..'9'
   + added instructions '(' and ')'
