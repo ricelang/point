@@ -1,0 +1,48 @@
+0..9
+  Push digit as a number into stack if not scanning number.
+(
+  Enable number scanning.
+)
+  Disable number scanning.
+"
+  Toggle string scanning; if toggled off, push 0.
+[
+  Enable loop scanning
+]
+  Disable loop scanning, and start scanned loop.
++
+  Pop top two items from stack. Add them. Push result into stack.
+-
+  Pop top two items from stack. Subtract the first one from the the second one. Push result into stack.
+*
+  Pop top two items from stack. Multiply them. Push result into stack.
+/
+  Pop top two items from stack. Divide the second one by the the first one. Push result into stack.
+%
+  Pop top two items from stack. Divide the second one by the first one. Push remainder into stack.
+^
+  Discard top item from stack.
+=
+  Duplicate top item of stack.
+~
+  Swap top two items of stack.
+>
+  Rotate stack to the right.
+<
+  Rotate stack to the left.
+$
+  Clear stack.
+#
+  Push size of stack.
+?
+  Pop item from stack. If its value is zero, push 0, otherwise push 1.
+.
+  Pop item from stack and output it as an ASCII character.
+:
+  Pop item from stack and output it as a number.
+,
+  Push item from input as an ASCII character into stack.
+;
+  Push item from input as a number into stack.
+&
+  Exit program.

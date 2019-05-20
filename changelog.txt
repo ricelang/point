@@ -1,0 +1,29 @@
+0.0.1 (initial version)
+  + added instructions '0'..'9'
+  + added instructions '(' and ')'
+  + added instruction '"'
+  + added instruction '+'
+  + added instruction '-'
+  + added instruction '*'
+  + added instruction '/'
+  + added instruction '%'
+  + added instruction '^'
+  + added instruction '='
+  + added instruction '~'
+  + added instruction '>'
+  + added instruction '<'
+  + added instruction '$'
+  + added instruction '#'
+  + added instruction '?'
+  + added instruction '.'
+  + added instruction ':'
+  + added instruction ','
+  + added instruction ';'
+  + added instruction '&'
+  + added real numbers support
+  + added ability to push negative numbers without subtraction
+    + added instruction '-' in parentheses scope
+  + added ability to divide numbers by 100 directly inside parentheses
+    + added instruction '%' in parentheses scope
+  + added loops, with the ability to nest them
+    + added instructions '[' and ']'
